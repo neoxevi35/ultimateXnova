@@ -10,7 +10,7 @@ RUN a2enmod rewrite
 COPY . /var/www/html/
 
 # Ajustar los permisos para que el instalador web pueda escribir archivos
-RUN chown -r www-data:www-data /var/www/html/
+RUN chown -R www-data:www-data /var/www/html/
 
 # Exponer el puerto por defecto
 EXPOSE 80
