@@ -4,6 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "nginx -g 'daemon off;' & php-fpm -F"
+    "startCommand": "php-fpm -D && nginx -g 'daemon off;'"
   }
 }
+
